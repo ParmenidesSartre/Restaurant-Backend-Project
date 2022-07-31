@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const mongoosePaginate = require("mongoose-paginate-v2");
 
 const menuSchema = new mongoose.Schema({
   name: {
@@ -25,6 +26,10 @@ const menuSchema = new mongoose.Schema({
     type: Boolean,
     default: false,
   },
+  popularity: {
+    type: Number,
+    default: 0,
+  },
   createdAt: {
     type: Date,
     default: Date.now,
@@ -43,6 +48,9 @@ menuSchema.statics.isMenuExist = async (name) => {
   const menu = await Menu.findOne({ name });
   return !!menu;
 };
+
+// Paginate
+menuSchema.plugin(mongoosePaginate);
 
 const Menu = mongoose.model("Menu", menuSchema);
 

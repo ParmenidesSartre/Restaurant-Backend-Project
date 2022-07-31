@@ -5,7 +5,13 @@ const upload = multer({ dest: "uploads/" });
 
 const router = express.Router();
 
-router.route("/").post(upload.array("dish", 5), menuController.createMenu);
-router.route("/:_id").patch(menuController.updateMenu);
+router
+  .route("/")
+  .post(upload.array("dish", 5), menuController.createMenu)
+  .get(menuController.getAllMenus);
+router
+  .route("/:_id")
+  .patch(menuController.updateMenu) // Can also be used to change published status
+  .delete(menuController.deleteMenu);
 
 module.exports = router;
