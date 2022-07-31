@@ -19,6 +19,7 @@ This project will be build multiple time with different technology. Some of the 
 
 
 ### Features for development ( Completed are in bold )
+- #### User registration
 - #### A digital menu, including photos and detailed info
 - #### Filters  (by price, discounts, popularity of dishes, a filter with some main ingredient included, etc.)
 - Table reservation
