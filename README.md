@@ -3,6 +3,13 @@
 ### Backstory
 A hypothetical restaurant in my local area needed a website and mobile application developed to allow them to handle online food ordering, delivery , reviews,and table reservation. The development will be ongoing and more features will be added soon.
 
+### Important Documentation
+[Trello Board](https://trello.com/b/xyAJ3vVq/restaurant)
+
+[API Endpoint Documentation](https://documenter.getpostman.com/view/9557996/Uze1uio7)
+
+[Database Design Document] -  Incoming
+
 ### Technology Stack and Version
 This project will be build multiple time with different technology. Some of the technologies are shown below.
 - Node and Express
@@ -11,9 +18,10 @@ This project will be build multiple time with different technology. Some of the 
 - Java
 
 
-### Features for development
-- A digital menu, including photos and detailed info ( Work in progress )
-- Filters  (by price, discounts, popularity of dishes, a filter with some main ingredient included, etc.)
+### Features for development ( Completed are in bold )
+- #### User registration
+- #### A digital menu, including photos and detailed info
+- #### Filters  (by price, discounts, popularity of dishes, a filter with some main ingredient included, etc.)
 - Table reservation
 - Order placement (for takeout orders/delivery)
 - Payments (both the order payments and tips)
